@@ -4,14 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog - Personal Portfolio</title>
+    <!--adding title-->
+    <title> Fatima's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
+    <!--Linking the google font links-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
-    <!-- Template CSS Files -->
+    <!--Linking the css files-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/preloader.min.css" rel="stylesheet">
     <link href="css/circle.css" rel="stylesheet">
@@ -19,10 +20,10 @@
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
+    <!--Linking the default color file which will be yellow-->
     <link href="css/skins/yellow.css" rel="stylesheet">
 
-    <!-- Live Style Switcher - demo only -->
+    <!--Linking all the color switcher files which will allow the user to switch the default color to any other color of their choice-->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
     <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
@@ -35,49 +36,64 @@
     <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
-    <!-- Modernizr JS File -->
+    <!--Linking the Modernizr JS File-->
+    <!--The modernizr js checks the user's browser and the features it has enabled. 
+    It checks if certain features are supported by the browser or not and disregards the one which are not supported by the web browser-->
     <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body class="awards">
 <!-- Live Style Switcher Starts - demo only -->
+<!--Code for the switcher area where the user may select what color they want to choose-->
 <div id="switcher" class="">
+    <!--creating a div for the switcher box-->
     <div class="content-switcher">
         <h4>STYLE SWITCHER</h4>
+        <!--creating an unordered list to add all the colors-->
         <ul>
+            <!--List for creating the purple icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
             </li>
+            <!--List for creating the red icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
             </li>
+            <!--List for creating the blueviolet icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
             </li>
+            <!--List for creating the blue icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
             </li>
+            <!--List for creating the goldenrod icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
             </li>
+            <!--List for creating the magenta icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
             </li>
+            <!--List for creating the yellowgreen icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
             </li>
+            <!--List for creating the orange icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
             </li>
+            <!--List for creating the green icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
             </li>
+            <!--List for creating the yellow icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
+        <!--Another div which will hide the switcher after the user is done choosing through css and js-->
         </ul>
-
-       <div id="hideSwitcher">&times;</div>
+           <div id="hideSwitcher">&times;</div>
     </div>
 </div>
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>

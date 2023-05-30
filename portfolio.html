@@ -4,14 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio -  Personal Portfolio</title>
+    <!--Adding a title-->
+    <title>Fatima's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
+    <!--Linking Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
-    <!-- Template CSS Files -->
+    <!--Linking the css files-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/preloader.min.css" rel="stylesheet">
     <link href="css/circle.css" rel="stylesheet">
@@ -19,10 +20,10 @@
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
+    <!--Linking the default color file which will be yellow-->
     <link href="css/skins/yellow.css" rel="stylesheet">
 
-    <!-- Live Style Switcher - demo only -->
+    <!--Linking all the color switcher files which will allow the user to switch the default color to any other color of their choice-->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
     <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
@@ -35,81 +36,102 @@
     <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
-    <!-- Modernizr JS File -->
+    <!--Linking the Modernizr JS File-->
+    <!--The modernizr js checks the user's browser and the features it has enabled. 
+    It checks if certain features are supported by the browser or not and disregards the one which are not supported by the web browser-->
     <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body class="portfolio">
-<!-- Live Style Switcher Starts - demo only -->
+<!--Code for the switcher area where the user may select what color they want to choose-->
 <div id="switcher" class="">
+    <!--creating a div for the switcher box-->
     <div class="content-switcher">
         <h4>STYLE SWITCHER</h4>
+        <!--creating an unordered list to add all the colors-->
         <ul>
+            <!--List for creating the purple icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
             </li>
+            <!--List for creating the red icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
             </li>
+            <!--List for creating the blueviolet icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
             </li>
+            <!--List for creating the blue icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
             </li>
+            <!--List for creating the goldenrod icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
             </li>
+            <!--List for creating the magenta icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
             </li>
+            <!--List for creating the yellowgreen icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
             </li>
+            <!--List for creating the orange icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
             </li>
+            <!--List for creating the green icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
             </li>
+            <!--List for creating the yellow icon and adding function to let the user choose this color-->
             <li>
                 <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
+        <!--Another div which will hide the switcher after the user is done choosing through css and js-->
         </ul>
-
-        <div id="hideSwitcher">&times;</div>
+           <div id="hideSwitcher">&times;</div>
     </div>
 </div>
+<!--code for making the settings button spin when not in use-->
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
+
+<!--Adding Header Tag-->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
+    <!--Desktop Fixed Navigation Code-->
+    <!--Using unordered list for the nav bar on the side-->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <!--home button-->
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
             </a>
         </li>
+        <!--about button-->
         <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="about.html">
                 <h2>About</h2>
             </a>
         </li>
+        <!--portfolio button-->
         <li class="icon-box active">
             <i class="fa fa-briefcase"></i>
             <a href="portfolio.html">
                 <h2>Portfolio</h2>
             </a>
         </li>
+        <!--contact button-->
         <li class="icon-box">
             <i class="fa fa-envelope-open"></i>
             <a href="contact.html">
                 <h2>Contact</h2>
             </a>
         </li>
+        <!--awards button-->
         <li class="icon-box">
             <i class="fa fa-comments"></i>
             <a href="awards.html">
@@ -117,160 +139,171 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
+    
+    <!--Code for mobile navigation-->
     <nav role="navigation" class="d-block d-lg-none">
+        <!--code for toggle menu-->
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
+            <!--unordered list for nav bar on phone-->
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <!--active class to set one page as active. class will be used later in css-->
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="awards.html"><i class="fa fa-comments"></i><span>Awards</span></a></li>
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
 </header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
+
+<!--Code for main content-->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
     <h1>my <span>portfolio</span></h1>
     <span class="title-bg">works</span>
 </section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
+
+<!--Code taken from codrops-->
 <section class="main-content text-center revealator-slideup revealator-once revealator-delay1">
     <div id="grid-gallery" class="container grid-gallery">
-        <!-- Portfolio Grid Starts -->
+        <!--Creating a grid to display all the portfolio items-->
         <section class="grid-wrap">
+            <!--Unordered list for each item-->
             <ul class="row grid">
-                <!-- Portfolio Item Starts -->
+                <!--1st portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-1.jpg" alt="Portolio Image" />
                         <div><span>Digital Storytelling</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+                
+                <!--2nd portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-2.jpg" alt="Portolio Image" />
                         <div><span>Twine Game</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--3rd portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-3.jpg" alt="Portolio Image" />
                         <div><span>Student Portal</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--4th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-4.jpg" alt="Portolio Image" />
                         <div><span>Student ID</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--5th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-5.jpg" alt="Portolio Image" />
                         <div><span>Soundboard Website</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--6th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-6.jpg" alt="Portolio Image" />
                         <div><span>RGB Game</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--7th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-7.jpg" alt="Portolio Image" />
                         <div><span>University Video</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+              
+                <!--8th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-8.jpg" alt="Portolio Image" />
                         <div><span>Stopmotion Animation</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+           
+                <!--9th portfolio item image and name-->
                 <li>
                     <figure>
                         <img src="img/projects/project-9.jpg" alt="Portolio Image" />
                         <div><span>Bitsy Game</span></div>
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
+            
             </ul>
         </section>
-        <!-- Portfolio Grid Ends -->
-        <!-- Portfolio Details Starts -->
+     
+        <!--Code for displaying each item's details-->
         <section class="slideshow">
+            <!--using unordered list again to create the detail boxes-->
             <ul>
-                <!-- Portfolio Item Detail Starts -->
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding a caption-->
                         <figcaption>
                             <h3>Digital Storytelling</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Video</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Canva</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">None</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://youtu.be/AglfsmrKQAU</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                       
+                        <!--Main project image-->
                         <img src="img/projects/project-1.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding caption-->
                         <figcaption>
                             <h3>Twine Game</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Game</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Twine</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://fatima-naveed.itch.io/the-sacred-village
 
@@ -278,223 +311,244 @@
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                      
+                        <!-- Main Project image-->
                         <img src="img/projects/project-2.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
+                    
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>Student Portal</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website Design</span>
                                 </div>
+                                <!--div for client name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Figma</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">None</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://www.figma.com</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+
+                        <!--Main project image-->
                         <img src="img/projects/project-3.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+               
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding caption-->
                         <figcaption>
                             <h3>Student ID</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Designing</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Figma</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">None</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.figma.com</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                       
+                        <!-- Main Project image-->
                         <img src="img/projects/project-4.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+               
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding captions-->
                         <figcaption>
                             <h3>Soundboard</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Visual Studio</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.github.com</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                       
+                        <!-- Main Project image-->
                         <img src="img/projects/project-5.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+              
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding caption-->
                         <figcaption>
                             <h3>RGB Game</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Game</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Visual Studio</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.github.com</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                      
+                        <!-- Main Project Content image -->
                         <img src="img/projects/project-6.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+             
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding a caption-->
                         <figcaption>
                             <h3>University Video</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Video</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Filmora</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">None</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://youtu.be/UQ3WnO2Figc</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                        
+                        <!--Main project image-->
                         <img src="img/projects/project-7.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+                
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding caption-->
                         <figcaption>
                             <h3>Stopmotion Animation</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Animation Video</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Youtube</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">Stopmotion Pro</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://youtu.be/k8V0P-PY2ns</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                      
+                        <!--Main project image-->
                         <img src="img/projects/project-8.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+                
+                <!--Details for portfolio item-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--Adding caption-->
                         <figcaption>
                             <h3>Bitsy Game</h3>
                             <div class="row open-sans-font">
+                                <!--div for project name-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Game</span>
                                 </div>
+                                <!--div for project client-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Bitsy Maker</span>
                                 </div>
+                                <!--div for languages of coding used-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                                 </div>
+                                <!--div for preview link-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">https://fatima-naveed.itch.io/the-escape</a></span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                       
+                        <!--Main Project image-->
                         <img src="img/projects/project-9.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
             </ul>
-            <!-- Portfolio Navigation Starts -->
+            <!--Code for portfolio items navigartion-->
+            <!--Adding navigation icons-->
             <nav>
                 <span class="icon nav-prev"><img src="img/projects/navigation/left-arrow.png" alt="previous"></span>
                 <span class="icon nav-next"><img src="img/projects/navigation/right-arrow.png" alt="next"></span>
                 <span class="nav-close"><img src="img/projects/navigation/close-button.png" alt="close"> </span>
             </nav>
-            <!-- Portfolio Navigation Ends -->
+       
         </section>
     </div>
 </section>
-<!-- Main Content Ends -->
 
-<!-- Template JS Files -->
+
+<!--Linking all javascript files-->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>

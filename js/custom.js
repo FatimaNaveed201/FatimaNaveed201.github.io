@@ -139,4 +139,33 @@
 	});
 
 
+	const contactForm = document.querySelector('#contact-form');
+
+	// Php, code for storing information provided by user
+	contactForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const formData = new FormData(contactForm);
+	fetch(contactForm.getAttribute('action'), {
+		method: 'POST',
+		headers: {
+		'Content-Type': 'application/x-www-form-urlencoded'
+		},
+		body: new URLSearchParams(formData).toString()
+	})
+		.then(() => {
+		// Display success message or redirect to a success page
+		alert('Your message has been sent successfully!');
+		contactForm.reset();
+		})
+		.catch((error) => {
+		// Handle error case
+		console.error('Error:', error);
+		});
+	});
+
+
+
 })(jQuery);
+
+

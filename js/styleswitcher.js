@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
         }
 
 		jQuery(_identifier).animate({"margin-left": "-500px"}, 500, function () {
-			jQuery(this).hide();
+			jQuery(this).hide();         
 		});
 
     });
