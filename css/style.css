@@ -1,53 +1,12 @@
-/*
-Template Name: Tunis - Personal Portfolio
-Author: celtano
-Author URI: http://themeforest.net/user/celtano
-Description: Tunis - Personal Portfolio
-Version: 1.0
-*/
+/*CSS Coded with my own css knowledge and bits and pieces taken from a template available online named Tunis- Personal Portfolio*/
 
-/*------------------------------------------------------------------
-[Table of contents]
-	+ General
-	    - Miscellaneous
-		- Light Body
-		- Buttons
-		- Page Title
-	+ Header
-		- Desktop Navigation
-		- Mobile Navigation
-	+ Pages
-		- Homepage
-		+ About
-		    - Personal Info List
-			- Box Stats
-			- Resume
-			- Skills
-		+ Portfolio
-		    - Grid
-		    + Slideshow
-                - Embedded Videos
-                - Carousel
-                - Navigation
-        + Contact
-            - Left Side
-            - Contact Form
-		+ Blog
-            - Latest Posts
-            - Pagination
-	- Responsive Design Styles
--------------------------------------------------------------------*/
-
-/* [ GENERAL ] */
-/*================================================== */
-
-/*** Miscellaneous ***/
-
+/*styling the html tag*/
 html {
   overflow-x: hidden;
   height: 100%;
 }
 
+/*styling the body of all the html files all together*/
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -62,6 +21,7 @@ body {
   background-color: #111;
 }
 
+/*Styling the Fonts*/
 .poppins-font {
   font-family: 'Poppins', sans-serif;
 }
@@ -93,225 +53,8 @@ hr.separator {
   font-size: 26px;
 }
 
-/*** Light Body ***/
 
-body.light {
-  color: #666;
-  background-color: #fff;
-}
-
-body.home.light .home-details h1 span {
-  color: #666;
-}
-
-body.home.light .home-details h6 {
-  color: #777;
-}
-
-body.home.light .bg {
-  background-image: url(../img/light.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
-}
-
-body.light .preloader .black_wall {
-  background-color: #eee;
-}
-
-body.light .preloader {
-  background-color: #fff;
-}
-
-body.light .title-section h1 {
-  color: #666;
-}
-
-body.light .title-bg {
-  color: rgba(30, 37, 48, 0.07);
-}
-
-body.light.about .box-stats {
-  border: 1px solid #ddd;
-}
-
-body.light.about .c100,
-body.light.about .resume-box .time {
-  background-color: #eee;
-}
-
-body.light.about .resume-box .time,
-body.light.about .resume-box p {
-  color: #666;
-}
-
-body.light.about .resume-box .place:before {
-  background-color: #666;
-}
-
-body.light.about  .resume-box li:after {
-  border-left: 1px solid #ddd;
-}
-
-body.light.about .c100 > span {
-  color: #666;
-}
-
-body.light.about .c100:after {
-  background-color: #fff;
-}
-
-body.light.portfolio .slideshow figure {
-  background-color: #fff;
-}
-
-body.light.portfolio .slideshow ul > li:after {
-  background: rgba(255,255,255,0.77);
-}
-
-body.light.portfolio .slideshow {
-  background: rgba(0,0,0,0.7);
-}
-
-body.light.contact .contactform input[type=text],
-body.light.contact .contactform input[type=email],
-body.light.contact .contactform textarea {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  color: #666;
-}
-
-body.light.contact  ul.social li a {
-  color: #666;
-  background: #eee;
-}
-
-body.light.contact  ul.social li a:hover {
-  color: #fff;
-}
-
-body.light.blog .post-content {
-  background-color: #f2f2f2;
-}
-
-body.light.blog .post-content .entry-header h3 a {
-  color: #666;
-}
-
-body.light.blog .page-link {
-  color: #666;
-  background-color: #eee;
-  border: 1px solid #eee;
-}
-
-body.light.blog-post .meta {
-  color: #888;
-}
-
-body.light.blog .page-item.active .page-link {
-  color: #fff;
-}
-
-body.light hr.separator {
-  border-top: 1px solid #ddd;
-}
-
-@media (min-width: 992px) {
-  body.light .header ul.icon-menu li.icon-box {
-    background-color: #eee;
-  }
-
-  body.light .header ul.icon-menu li.icon-box i {
-    color: #666;
-  }
-
-  body.light .header ul.icon-menu li.icon-box.active,
-  body.light .header ul.icon-menu li.icon-box:hover,
-  body.light .header ul.icon-menu li.icon-box.active i,
-  body.light .header ul.icon-menu li.icon-box:hover i {
-    color: #fff;
-  }
-}
-
-@media (max-width: 991px) {
-
-  body.light .main-img-mobile {
-    border: 4px solid #eee;
-  }
-
-  body.light #menuToggle {
-    border: 1px solid #ddd;
-  }
-
-  body.light #menuToggle,
-  body.light #menu {
-    background: #eee;
-  }
-
-  body.light #menuToggle > span,
-  body.light #menuToggle input:checked ~ span {
-    background: #666;
-  }
-
-  body.light #menu li a {
-    color: #666;
-  }
-
-  body.light #menu li:after {
-    background: #ddd;
-  }
-
-  body.light.portfolio .slideshow nav {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
-  }
-
-  body.light.portfolio .slideshow nav span img {
-    display: none;
-  }
-
-  body.light.portfolio .slideshow nav span.nav-next {
-    background-image: url("../img/projects/navigation/right-arrow.png");
-    background-size: cover;
-  }
-
-  body.light.portfolio .slideshow nav span.nav-prev {
-    background-image: url("../img/projects/navigation/left-arrow.png");
-    background-size: cover;
-  }
-
-  body.light.portfolio .slideshow nav span.nav-close {
-    background-image: url("../img/projects/navigation/close-button.png");
-    background-size: cover;
-  }
-
-  body.light.portfolio .slideshow nav span.nav-next,
-  body.light.portfolio .slideshow nav span.nav-prev {
-    top: 51px;
-  }
-
-  body.light.portfolio .slideshow {
-    background: #fff;
-  }
-}
-
-@media (max-width: 576px) {
-  body.light .title-section {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
-  }
-
-  body.light #menuToggle {
-    border: 0;
-  }
-
-  body.light.portfolio .slideshow nav span.nav-next,
-  body.light.portfolio .slideshow nav span.nav-prev {
-    top: 31px;
-  }
-}
-/*** Buttons ***/
+/*Styling the Buttons*/
 .btn {
   box-shadow: none !important;
   border-radius: 26px;
@@ -331,6 +74,7 @@ body.light hr.separator {
   border: 0;
 }
 
+/*Hover and focus effect for buttons*/
 .btn,
 .btn:hover,
 .btn:focus {
@@ -338,8 +82,7 @@ body.light hr.separator {
   text-decoration: none;
 }
 
-/*** Page Title ***/
-
+/*Styling the titles*/
 .title-section {
   margin: 0 auto;
   width: 100%;
@@ -355,6 +98,7 @@ body.light hr.separator {
   margin: 0;
 }
 
+/*Styling the title background*/
 .title-bg {
   font-size: 110px;
   left: 0;
@@ -372,16 +116,16 @@ body.light hr.separator {
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.07);
 }
+/*=================================================*/
+/*=================================================*/
 
-/* [ HEADER ] */
-/*================================================== */
+/*Styling the header*/
+/*styling the desktop navigation header*/
 
-/*** Desktop Navigation ***/
-
+/*@media for responsive styling*/
 @media (min-width: 992px) {
 
-  /*** Navigation ***/
-
+  /*styling the headers*/
   .header {
     position: fixed;
     right: 30px;
@@ -401,6 +145,7 @@ body.light hr.separator {
     opacity: 0;
   }
 
+  /*header icons*/
   .header ul.icon-menu {
     margin: 0;
     padding: 0;
@@ -425,6 +170,7 @@ body.light hr.separator {
     transition: .3s;
   }
 
+  /*styling active icons on the menu*/
   .header ul.icon-menu li.icon-box.active,
   .header ul.icon-menu li.icon-box:hover,
   .header ul.icon-menu li.icon-box.active i,
@@ -483,12 +229,13 @@ body.light hr.separator {
     border-radius: 30px 0 0 30px;
   }
 }
+/*=================================================*/
+/*=================================================*/
 
-/* [ Pages ] */
-/*================================================== */
 
-/*** Homepage ***/
+/*Styling the Home Page (Main index.html page)*/
 
+/*Styling the home page, adding background color, styling containers, text etc*/
 .home .color-block {
   position: fixed;
   height: 200%;
@@ -546,15 +293,14 @@ body.light hr.separator {
   font-size: 16px;
   line-height: 32px;
 }
+/*=================================================*/
 
-/*** About ***/
-
+/*Styling the About me Page*/
 .about .main-content {
   padding-bottom: 20px;
 }
 
-/* Personal Info List */
-
+/*Styling the personal information list*/
 .about .about-list li:not(:last-child) {
   padding-bottom: 20px;
 }
@@ -568,8 +314,7 @@ body.light hr.separator {
   font-weight: 600;
 }
 
-/* Box Stats */
-
+/*Styling the personal info boxes*/
 .about .box-stats {
   padding: 20px 30px 25px 40px;
   border-radius: 5px;
@@ -611,8 +356,7 @@ body.light hr.separator {
   background: #777;
 }
 
-/* Resume */
-
+/*=Styling the resume (Job interests and education section)*/
 .about .resume-box ul {
   margin: 0;
   padding: 0;
@@ -690,8 +434,7 @@ body.light hr.separator {
   opacity: .8;
 }
 
-/* Skills */
-
+/*Styling the skills circles*/
 .about .c100 {
   float: none !important;
   margin: 0 auto;
@@ -705,15 +448,16 @@ body.light hr.separator {
 .about .c100:after {
   background-color: #111;
 }
+/*=================================================*/
+/*=================================================*/
 
-/*** Portfolio ***/
+/*Styling the Portfolio page*/
 .portfolio .main-content {
   padding-bottom: 60px;
   margin-top: -15px;
 }
 
-/* Grid */
-
+/*Styling the portfolio item grid*/
 .portfolio .grid-gallery ul {
   list-style: none;
   margin: 0;
@@ -787,8 +531,7 @@ body.light hr.separator {
   font-size: 18px;
 }
 
-/* Slideshow */
-
+/*Styling the portfolio slideshow feature*/
 .portfolio .slideshow {
   position: fixed;
   background: rgba(0,0,0,0.85);
@@ -894,60 +637,7 @@ body.light hr.separator {
   font-size: 33px;
 }
 
-/* Embedded Videos */
-
-.portfolio .slideshow .videocontainer,
-.portfolio .slideshow .responsive-video {
-  max-width: 100%;
-  border-radius: 4px;
-  display: block;
-  object-fit: cover;
-}
-
-.portfolio .slideshow .videocontainer {
-  position: relative;
-  padding-bottom: 56.20%;
-  padding-top: 0;
-  height: 0;
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.portfolio .slideshow .videocontainer iframe,
-.portfolio .slideshow .videocontainer object,
-.portfolio .slideshow .videocontainer embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Carousel */
-
-.portfolio .slideshow .carousel-indicators {
-  bottom: 0;
-  background: rgba(0,0,0,.4);
-  padding: 10px 0;
-  margin: 0;
-}
-
-.portfolio .slideshow .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 7px;
-  background-color: #fff;
-  opacity: 1;
-}
-
-/* Navigation */
-
+/*Styling the portfolio navigation system*/
 .portfolio .slideshow nav span {
   position: fixed;
   z-index: 1000;
@@ -979,13 +669,15 @@ body.light hr.separator {
   right: 30px;
   padding: 0;
 }
+/*=================================================*/
+/*=================================================*/
 
-/*** Contact ***/
+/*Styling the Contact Page*/
 .contact .main-content {
   padding-bottom: 85px;
 }
-/* Left Side */
 
+/*css for left side of contact page (text area)*/
 .contact .custom-span-contact {
   font-weight: 600;
   padding-left: 50px;
@@ -1031,7 +723,9 @@ body.light hr.separator {
   background: #2b2a2a;
   border-radius: 50%;
 }
-/* Form */
+
+/*Styling the right side of the contact page*/
+/*CSS for the contact form*/
 .contact .contactform input[type=text],
 .contact .contactform input[type=email] {
   border: 1px solid #111;
@@ -1090,17 +784,19 @@ body.light hr.separator {
   content: "\f071";
   padding-right: 10px;
 }
+/*=================================================*/
+/*=================================================*/
 
-/*** Blog ***/
 
-/*** Portfolio ***/
+/*Styling the Awards Page*/
+
+
 .awards .main-content {
   padding-bottom: 60px;
   margin-top: -15px;
 }
 
-/* Grid */
-
+/*Styling the certificate images grid*/
 .awards .grid-gallery ul {
   list-style: none;
   margin: 0;
@@ -1174,8 +870,7 @@ body.light hr.separator {
   font-size: 18px;
 }
 
-/* Slideshow */
-
+/*Certificate slideshow styling*/
 .awards .slideshow {
   position: fixed;
   background: rgba(0,0,0,0.85);
@@ -1281,60 +976,7 @@ body.light hr.separator {
   font-size: 33px;
 }
 
-/* Embedded Videos */
-
-.awards .slideshow .videocontainer,
-.awards .slideshow .responsive-video {
-  max-width: 100%;
-  border-radius: 4px;
-  display: block;
-  object-fit: cover;
-}
-
-.awards .slideshow .videocontainer {
-  position: relative;
-  padding-bottom: 56.20%;
-  padding-top: 0;
-  height: 0;
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.awards .slideshow .videocontainer iframe,
-.awards .slideshow .videocontainer object,
-.awards .slideshow .videocontainer embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Carousel */
-
-.awards .slideshow .carousel-indicators {
-  bottom: 0;
-  background: rgba(0,0,0,.4);
-  padding: 10px 0;
-  margin: 0;
-}
-
-.awards .slideshow .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 7px;
-  background-color: #fff;
-  opacity: 1;
-}
-
-/* Navigation */
-
+/*CSS For certificate navigations after clicked*/
 .awards .slideshow nav span {
   position: fixed;
   z-index: 1000;
@@ -1366,9 +1008,10 @@ body.light hr.separator {
   right: 30px;
   padding: 0;
 }
+/*=================================================*/
+/*=================================================*/
 
-/* [ RESPONSIVE DESIGN STYLES ] */
-
+/*CSS For Responsive Website*/
 @media (min-width: 1351px) {
   .portfolio .container-portfolio .grid {
     text-align: left;
@@ -1461,8 +1104,10 @@ body.light hr.separator {
     transform: translateX(0);
   }
 }
+/*=================================================*/
+/*=================================================*/
 
-/* Mobile  Navigation */
+/*CSS for Responsive Mobile  Navigation*/
 
 @media (max-width: 991px) {
   .btn {
@@ -1628,6 +1273,7 @@ body.light hr.separator {
     font-weight: 400;
   }
 
+  /*mobile portfolio*/
   .portfolio .grid li {
     width: 50%;
   }
@@ -1716,7 +1362,7 @@ body.light hr.separator {
     border-bottom: 1px solid #333;
   }
 
-  /*certificates*/
+  /* mobile certificates*/
 
   .awards .grid li {
     width: 50%;
@@ -1811,6 +1457,7 @@ body.light hr.separator {
   }
 }
 
+/*mobile home*/
 @media (max-width: 767px) {
   .home .home-details p {
     font-size: 14px;
@@ -1910,6 +1557,7 @@ body.light hr.separator {
     font-size: 21px;
   }
 
+  /*mobile about page*/
   .about .main-content {
     padding-bottom: 0;
   }
@@ -1942,6 +1590,7 @@ body.light hr.separator {
     display: none;
   }
 
+  /*=mobile portfolio*/
   .portfolio .main-content {
     padding-bottom: 10px;
     margin-top: -12px;
@@ -1999,7 +1648,7 @@ body.light hr.separator {
     height: 62px;
   }
 
-  /*certificates*/
+  /*cmobile certificates*/
 
   .awards .grid li {
     width: 100%;
@@ -2058,3 +1707,6 @@ body.light hr.separator {
     margin-top: 35px !important;
   }
 }
+/*=======================================================================================*/
+/*========================================THE END========================================*/
+/*=======================================================================================*/

@@ -1,3 +1,6 @@
+/*css stylesheet for styling the switchers*/
+
+/*styling the switcher id*/
 #switcher {
 	background: #fff;
 	position: fixed;
@@ -12,9 +15,9 @@
 	font-family: 'Open Sans', Arial, sans-serif;
 	-webkit-box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.2);
 	box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.2);
-
 }
 
+/* styling the label tag of the switcher*/
 #switcher label {
 	padding-right:20px;
 	padding-left:20px;
@@ -23,11 +26,15 @@
 	color:#333;
 	position: relative;
 }
+
+/*styling the seperator line*/
 #switcher hr {
 	border:0;
 	border-bottom:#ccc 1px solid;
 	margin:10px 0;
 }
+
+/*styling the h4 tag*/
 #switcher h4 {
 	padding: 5px 0; 
 	border-bottom:#ccc 1px solid; 
@@ -38,6 +45,7 @@
 	margin: 0 0 10px 0;
 }
 
+/*styling the unordered list*/
 #switcher ul {
 	padding:0!important;
 	margin:20px 0!important;
@@ -52,6 +60,7 @@
 	width:30px;
 }
 
+/*styling the id so that it shows when clicked*/
 #showSwitcher {
 	z-index: 11111;
 	margin-left:0px;
@@ -74,6 +83,8 @@
 	padding: 10px 16px 10px 14px;
 	cursor: pointer;
 }
+
+/*styling the id to hide switcher when needed*/
 #hideSwitcher {
 	cursor:pointer;
 	line-height:43px;
@@ -123,13 +134,14 @@
 	font-size:25px;
 	color:#222;
 }
+
 #switcher .styled-select select {
    background:#f5f5f5;
    width: 100%;
    font-size: 13px;
    line-height: 13px;
    outline:none;
-
+	appearance: none;
    -webkit-appearance: none;
    cursor:pointer;
 }
@@ -169,6 +181,8 @@
     text-align: center;
 	    margin-top: 25px;
 }
+
+/*@media is responsible of making the part responsive*/
 @media only screen and (max-width: 991px) {
 	#switcher {
 		top:40px;
