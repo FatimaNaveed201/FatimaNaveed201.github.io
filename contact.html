@@ -95,36 +95,43 @@
            <div id="hideSwitcher">&times;</div>
     </div>
 </div>
+<!--code for making the settings button spin when not in use-->
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
+
+<!--Adding Header Tag-->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
+    <!--Desktop Fixed Navigation Code-->
+    <!--Using unordered list for the nav bar on the side-->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <!--home button-->
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
             </a>
         </li>
+        <!--about button-->
         <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="about.html">
                 <h2>About</h2>
             </a>
         </li>
+        <!--portfolio-->
         <li class="icon-box">
             <i class="fa fa-briefcase"></i>
             <a href="portfolio.html">
                 <h2>Portfolio</h2>
             </a>
         </li>
+        <!--contact button-->
         <li class="icon-box active">
             <i class="fa fa-envelope-open"></i>
             <a href="contact.html">
                 <h2>Contact</h2>
             </a>
         </li>
+        <!--awards button-->
         <li class="icon-box">
             <i class="fa fa-comments"></i>
             <a href="awards.html">
@@ -132,38 +139,43 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
+    
+    <!--Code for mobile navigation-->
     <nav role="navigation" class="d-block d-lg-none">
+        <!--code for toggle menu-->
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
+            <!--unordered list for nav bar on phone-->
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <!--active class to set one page as active. class will be used later in css-->
                 <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="awards.html"><i class="fa fa-comments"></i><span>Awards</span></a></li>
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
 </header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
+
+<!--Code for main content-->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <!--creating heading with a text background-->
     <h1>get in <span>touch</span></h1>
     <span class="title-bg">contact</span>
 </section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
+
+<!--code for main content-->
 <section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <!--creating a div and giving it container class to style it to the left side-->
     <div class="container">
         <div class="row">
-            <!-- Left Side Starts -->
+            <!--code for the left side of page-->
             <div class="col-12 col-lg-4">
+                <!--adding the text-->
                 <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Contact me !</h3>
                 <p class="open-sans-font mb-3">Feel free to contact me for any further inquiries or for any hiring purposes. I'd gladly answer any questions you may have. Send me a message and I'd get back to you about it as soon as possible!</p>
                 <p class="open-sans-font custom-span-contact position-relative">
@@ -174,6 +186,7 @@
                     <i class="fa fa-phone-square position-absolute"></i>
                     <span class="d-block">call me</span>+971 54 321 3480
                 </p>
+                <!--using unordered list and adding the social media icons-->
                 <ul class="social list-unstyled pt-1 mb-5">
                     <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -185,23 +198,29 @@
                     </li>
                 </ul>
             </div>
-            <!-- Left Side Ends -->
-            <!-- Contact Form Starts -->
+         
+            <!--Creating the contact form-->
             <div class="col-12 col-lg-8">
+                <!--creating form and also linking the php file-->
                 <form class="contactform" id="contact-form" action="send_email.php" method="POST">
                     <div class="contactform">
                         <div class="row">
+                            <!--div for name input-->
                             <div class="col-12 col-md-4">
                                 <input type="text" name="name" placeholder="YOUR NAME">
                             </div>
+                            <!--div for email input-->
                             <div class="col-12 col-md-4">
                                 <input type="email" name="email" placeholder="YOUR EMAIL">
                             </div>
+                            <!--div for subject input-->
                             <div class="col-12 col-md-4">
                                 <input type="text" name="subject" placeholder="YOUR SUBJECT">
                             </div>
+                            <!--div for message input-->
                             <div class="col-12">
                                 <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <!--send button-->
                                 <button type="submit" class="btn btn-contact">Send Message</button>
                             </div>
                             <div class="col-12 form-message">
@@ -211,12 +230,11 @@
                     </div>
                 </form>
             </div>
-            <!-- Contact Form Ends -->
         </div>
     </div>
 
 </section>
-<!-- Template JS Files -->
+<!--Linking all the javascript files-->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>

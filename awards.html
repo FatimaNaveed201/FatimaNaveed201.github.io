@@ -96,36 +96,43 @@
            <div id="hideSwitcher">&times;</div>
     </div>
 </div>
+<!--code for making the settings button spin when not in use-->
 <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
+
+<!--Adding Header Tag-->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
+    <!--Desktop Fixed Navigation Code-->
+    <!--Using unordered list for the nav bar on the side-->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <!--home button-->
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
             </a>
         </li>
+        <!--about button-->
         <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="about.html">
                 <h2>About</h2>
             </a>
         </li>
+        <!--portfolio button-->
         <li class="icon-box">
             <i class="fa fa-briefcase"></i>
             <a href="portfolio.html">
                 <h2>Portfolio</h2>
             </a>
         </li>
+        <!--contact button-->
         <li class="icon-box">
             <i class="fa fa-envelope-open"></i>
             <a href="contact.html">
                 <h2>Contact</h2>
             </a>
         </li>
+        <!--awards button-->
         <li class="icon-box active">
             <i class="fa fa-comments"></i>
             <a href="awards.html">
@@ -133,233 +140,242 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
+    
+    <!--Code for mobile navigation-->
     <nav role="navigation" class="d-block d-lg-none">
+        <!--code for toggle menu-->
         <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
+            <!--unordered list for nav bar on phone-->
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <!--active class to set one page as active. class will be used later in css-->
                 <li class="active"><a href="awards.html"><i class="fa fa-comments"></i><span>Awards</span></a></li>
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
 </header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
+
+<!--Code for main content-->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <!--adding main heading with text background-->
     <h1>my <span>certificates</span></h1>
     <span class="title-bg">awards</span>
 </section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
+
+<!--code taken from codrops-->
 <section class="main-content text-center revealator-slideup revealator-once revealator-delay1">
+
     <div id="grid-gallery" class="container grid-gallery">
-        <!-- Portfolio Grid Starts -->
+        <!--Creating a grid to display all the portfolio items-->
         <section class="grid-wrap">
+            <!--Unordered list for each certificate-->
             <ul class="row grid">
-                <!-- Portfolio Item Starts -->
+                <!--1st certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-1.jpg" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+             
+                <!--2nd certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-2.jpg" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+                
+                <!--3rd certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-3.jpg" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+                
+                <!--4th certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-4.jpg" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+                
+                <!--5th certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-5.png" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
+                
+                <!--6th certificate image-->
                 <li>
                     <figure>
                         <img src="img/awards/award-6.jpg" alt="Certificates Image" />
                     </figure>
                 </li>
-                <!-- Portfolio Item Ends -->
             </ul>
         </section>
-        <!-- Portfolio Grid Ends -->
-        <!-- Portfolio Details Starts -->
+       
+        <!--Code for displaying each certificate's details-->
         <section class="slideshow">
+            <!--using unordered list again to create the detail boxes-->
             <ul>
-                <!-- Portfolio Item Detail Starts -->
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>International Conference</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by attending an internation conference held at Bath Spa University.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2023</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                
+                        <!--certificate image-->
                         <img src="img/awards/award-1.jpg" alt="Certificates Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+           
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>CSS Course</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by completing an online course for CSS on sololearn.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2023</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                        
+                        <!--certificate image-->
                         <img src="img/awards/award-2.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>HTML Course</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by completing an online course for HTML on sololearn.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2023</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                      
+                        <!--certificate image-->
                         <img src="img/awards/award-3.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+                
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>Javascript Course</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by completing an online course for javascript on sololearn.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2023</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                            
+                        <!--certificate image-->
                         <img src="img/awards/award-4.jpg" alt="Portolio Image"/>
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+                
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>Python Course</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by completing an online course for python on sololearn.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2022</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                       
+                        <!--certificate image-->
                         <img src="img/awards/award-5.png" alt="Portolio Image" />
                         <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Starts -->
+
+                <!--Details for certificate-->
                 <li>
                     <figure>
-                        <!-- Project Details Starts -->
+                        <!--adding caption-->
                         <figcaption>
                             <h3>Hour of Code</h3>
                             <div class="row open-sans-font">
+                                <!--div for certificate information-->
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Information </span>: <span class="ft-wt-600 uppercase">Certificate earned by completeing a scratch game course online.</span>
                                 </div>
+                                <!--div for the year-->
                                 <div class="col-12 col-sm-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Year </span>: <span class="ft-wt-600 uppercase">2022</span>
                                 </div>
                             </div>
                         </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
+                            
+                        <!--certificate image-->
                         <img src="img/awards/award-6.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
                     </figure>
                 </li>
-                <!-- Portfolio Item Detail Ends -->
-                <!-- Portfolio Item Detail Ends -->
             </ul>
-            <!-- Portfolio Navigation Starts -->
+            <!--Code for certificates navigartion-->
+            <!--Adding navigation icons-->
             <nav>
                 <span class="icon nav-prev"><img src="img/projects/navigation/left-arrow.png" alt="previous"></span>
                 <span class="icon nav-next"><img src="img/projects/navigation/right-arrow.png" alt="next"></span>
                 <span class="nav-close"><img src="img/projects/navigation/close-button.png" alt="close"> </span>
             </nav>
-            <!-- Portfolio Navigation Ends -->
         </section>
     </div>
 </section>
-<!-- Main Content Ends -->
 
-<!-- Template JS Files -->
+<!--Linking all javascript files-->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>
