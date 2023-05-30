@@ -2,45 +2,22 @@
 
 	"use strict";
 
-	/* ----------------------------------------------------------- */
-	/*  FUNCTION TO STOP LOCAL AND YOUTUBE VIDEOS IN SLIDESHOW
-    /* ----------------------------------------------------------- */
-
-	function stop_videos() {
-		var video = document.getElementById("video");
-		if (video.paused !== true && video.ended !== true) {
-			video.pause();
-		}
-		$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
-	}
-
 	$(document).ready(function() {
 
 		/* ----------------------------------------------------------- */
-		/*  STOP VIDEOS
-        /* ----------------------------------------------------------- */
-
-		$('.slideshow nav span').on('click', function () {
-			stop_videos();
-		});
-
-		/* ----------------------------------------------------------- */
-		/*  FIX REVEALATOR ISSUE AFTER PAGE LOADED
-        /* ----------------------------------------------------------- */
+		/*Javascript code for revealator after page is loaded completely*/
 
 		$(".revealator-delay1").addClass('no-transform');
 
 		/* ----------------------------------------------------------- */
-		/*  PORTFOLIO GALLERY
-        /* ----------------------------------------------------------- */
+		/*code for organized portfolio gallery*/
 
 		if ($('.grid').length) {
 			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		}
 
 		/* ----------------------------------------------------------- */
-		/*  BUTTONS ANIMATION
-        /* ----------------------------------------------------------- */
+		/*Function to animate the buttons*/
 		function checkSize() {
 			if ($( document ).width() > 992) {
 				var btn_hover = "";
@@ -56,16 +33,14 @@
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  HIDE HEADER WHEN PORTFOLIO SLIDESHOW OPENED
-        /* ----------------------------------------------------------- */
+		/*Function to hide the header when portfolio items are clicked on*/
 
 		$(".grid figure").on('click', function() {
 			$("#navbar-collapse-toggle").addClass('hide-header');
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  SHOW HEADER WHEN PORTFOLIO SLIDESHOW CLOSED
-        /* ----------------------------------------------------------- */
+		/*Return to main page after portfolio slideshow is exited function*/
 
 		$(".nav-close").on('click', function() {
 			$("#navbar-collapse-toggle").removeClass('hide-header');
@@ -82,8 +57,7 @@
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  PORTFOLIO DIRECTION AWARE HOVER EFFECT
-        /* ----------------------------------------------------------- */
+		/*Portfolio hover effect according to direction*/
 
 		var item = $(".grid li figure");
 		var elementsLength = item.length;
@@ -92,8 +66,7 @@
 		}
 
 		/* ----------------------------------------------------------- */
-		/*  AJAX CONTACT FORM
-        /* ----------------------------------------------------------- */
+		/*CONTACT FORM*/
 
 		$(".contactform").on("submit", function() {
 			$(".output_message").text("Sending...");
@@ -126,8 +99,7 @@
 	$(document).keyup(function(e) {
 
 		/* ----------------------------------------------------------- */
-		/*  KEYBOARD NAVIGATION IN PORTFOLIO SLIDESHOW
-        /* ----------------------------------------------------------- */
+		/*KEYBOARD NAVIGATION IN PORTFOLIO SLIDESHOW*/
 		if (e.keyCode === 27) {
 			stop_videos();
 			$('.close-content').click();

@@ -1,5 +1,4 @@
-/**	STYLE SWITCHER
-*************************************************** **/
+// Javascript code for the style switcher to switch the style colors 
 jQuery(document).ready(function() {
 	"use strict";
 
@@ -100,59 +99,27 @@ function readCookie(name) {
 }
 
 
-/** ********************************************************************************************************** **/
-/** ********************************************************************************************************** **/
-/** ********************************************************************************************************** **/
-
 /**
 	@ON LOAD
 **/
 var switcher_visible = '';
 window.onload = function(e) {
 
-	// COLOR SCHEME
+	//CODE FOR COLOR SCHEME
 	var cookie = readCookie("style");
 	var title = cookie ? cookie : getPreferredStyleSheet();
 	setActiveStyleSheet(title);
 
-	// SWITCHER OPEN|CLOSED
+	//JS FOR OPENING AND CLOSING THE SWITCHER 
 	if(switcher_visible != 'false') {
 		jQuery("#showSwitcher").trigger('click');
-	}
-
-	// DARK OR LIGHT
-	var is_dark = readCookie('is_light');
-	if(is_boxed == 'true') {
-		jQuery('light').removeClass('light');
-		jQuery('light').addClass('light');
-		jQuery("#is_light").trigger('click');
 	}
 
 }
 
 
 /**
-	COLOR SKIN [light|dark]
-**/
-jQuery("input.dark_switch").bind("click", function() {
-	var boxed_switch = jQuery(this).attr('value');
-
-	if(boxed_switch == 'light') {
-		jQuery("body").removeClass('dark');
-		jQuery("body").addClass('light');
-	} else {
-
-		jQuery("body").removeClass('light');
-		jQuery("body").addClass('dark');
-	}
-});
-
-
-
-
-
-/**
-	LAYOUT STYLE [wide|boxed]
+	JS FOR THE LAYOUT STYLE
 **/
 jQuery("input.boxed_switch").bind("click", function() {
 	var boxed_switch = jQuery(this).attr('value');
@@ -170,49 +137,3 @@ jQuery("input.boxed_switch").bind("click", function() {
 
 
 
-/**
-	SEPARATOR STYLE [Normal|Skew|Reversed Skew|Double Diagonal|Big Triangle]
-**/
-jQuery("input.separator_switch").bind("click", function() {
-	var separator_switch = jQuery(this).attr('value');
-
-	if(separator_switch == 'skew') {
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('skew');
-		createCookie("is_skew", 'true', 365);
-	}
-	
-	else if(separator_switch == 'reversed-skew') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('reversed-skew');
-		createCookie("is_reversed_skew", 'true', 365);
-	}
-	
-	else if(separator_switch == 'double-diagonal') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('big-triangle');
-		jQuery("body").addClass('double-diagonal');
-		createCookie("is_double_diagonal", 'true', 365);
-	}
-	
-	else if(separator_switch == 'big-triangle') {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").addClass('big-triangle');
-		createCookie("is_big_triangle", 'true', 365);
-	}
-	
-	else {
-		jQuery("body").removeClass('skew');
-		jQuery("body").removeClass('reversed-skew');
-		jQuery("body").removeClass('double-diagonal');
-		jQuery("body").removeClass('big-triangle');
-		createCookie("is_normal", '', -1);
-	}
-});
