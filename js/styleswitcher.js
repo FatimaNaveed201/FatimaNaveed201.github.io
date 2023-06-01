@@ -1,4 +1,4 @@
-// Javascript code for the style switcher to switch the style colors 
+// Javascript code for the style switcher to switch the style colors and other visual styling
 jQuery(document).ready(function() {
 	"use strict";
 
@@ -134,6 +134,3 @@ jQuery("input.boxed_switch").bind("click", function() {
 		jQuery('body').removeClass('transparent');
 	}
 });
-
-
-
