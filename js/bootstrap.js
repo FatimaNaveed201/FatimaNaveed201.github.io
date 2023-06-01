@@ -1,4 +1,4 @@
-/*Code taken from online library "Bootstrap.js"*/
+/*Code taken from online library "Bootstrap.js", bootstrap.com*/
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :

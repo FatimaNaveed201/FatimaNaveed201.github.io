@@ -1,4 +1,4 @@
-/*Coded with the help of codrops. Js code for the grid galleries to function properly*/
+/*Coded with codrops. Js code for the grid galleries to function properly*/
 ;( function( window ) {
 	
 	'use strict';
